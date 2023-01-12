@@ -1,0 +1,180 @@
+body {
+	background-color: #E5E5E5;
+}
+
+.outerbox {
+	padding: 50px;
+	color: #545454;
+}
+
+.innerbox {
+	background-color: #F9F9F9;
+	padding: 60px;
+	position: relative;
+	height: 700px;
+	overflow: hidden;
+}
+
+.innerbox::before {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 769.01px;
+	height: 13.44px;
+	left: -60px;
+	top: 50%;
+	background: #E0E8FC;
+	transform: translateY(-50%) rotate(-30deg);
+}
+
+.innerbox::after {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 769.01px;
+	height: 13.44px;
+	right: -60px;
+	top: 50%;
+	background: #E0E8FC;
+	transform: translateY(-50%) rotate(-30deg);
+}
+
+.formbox {
+	padding: 45px 90px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 93px;
+	z-index: 99;
+	max-width: 560px;
+	max-height: 611px;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 18px;
+	background: #FFFFFF;
+	box-shadow: 4px 4px 20px rgba(157, 157, 157, 0.12);
+	border-radius: 15px;
+}
+
+.formbox .formtitle {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 26px;
+	line-height: 30px;
+	text-align: center;
+	color: #212121;
+	margin-bottom: 16px;
+}
+
+.formbox .formcontent {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 18px;
+	color: #545454;
+	text-align: center;
+	margin-bottom: 24px;
+}
+
+.formbox .company {
+	margin-bottom: 28px;
+}
+
+.formbox label {
+	margin-bottom: 8px;
+	display: block;
+}
+
+.formbox .company input,
+.formbox .industry select {
+	border: 1px solid #CED4DA;
+	border-radius: 6px;
+	padding: 10px;
+	width: 100%;
+}
+
+.formbox .industry select {
+	appearance: none;
+}
+
+.formbox .industry .industryselect {
+	position: relative;
+}
+
+.formbox .industry .industryselect::after {
+	content: '';
+	background: url('Polygon.png') no-repeat;
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: absolute;
+	right: 12px;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 8px;
+	height: 6px;
+}
+
+.formbox .industry {
+	margin-bottom: 30px;
+}
+
+.formbox .company input {
+	width: 95%;
+}
+
+.formbox .companysize {
+	margin-bottom: 60px;
+}
+
+.formbox .companysize a {
+	padding: 4px 8px;
+	margin-right: 13px;
+	display: inline-block;
+	background: #F0F0F0;
+	border-radius: 2px;
+	color: #000;
+	text-decoration: none;
+}
+
+.formbox .companysize a:last-child {
+	margin-right: 0;
+}
+
+.formbox .companysize a:hover {
+	background: #3766E8;
+	color: #fff;
+}
+
+.formbox .imagebox {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+.button {
+	display: block;
+	width: 100%;
+	background: #3766E8;
+	border-radius: 5px;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	padding: 10px;
+}
+
+.terms {
+	position: absolute;
+	width: 200px;
+	height: 19px;
+	left: 470px;
+	top: 750px;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 18px;
+	color: #545454;
+}
